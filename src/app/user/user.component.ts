@@ -5,13 +5,14 @@ import {
   Input,
   Output,
 } from '@angular/core';
+import { CardComponent } from '../shared/card/card.component';
 
 import { User} from './user.model';
 
 @Component({
   selector: 'app-user',
   standalone: true,
-  imports: [NgFor],
+  imports: [NgFor, CardComponent],
   templateUrl: './user.component.html',
   styleUrl: './user.component.css',
 })
